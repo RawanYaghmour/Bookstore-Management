@@ -1,0 +1,61 @@
+﻿/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Change font family */
+    line-height: 1.6; /* Increase line height for readability */
+}
+
+.container {
+    max-width: 1200px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding */
+}
+
+/* Custom Row and Column Styles */
+.custom-row {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of columns */
+    margin-top: 40px; /* Custom top margin */
+}
+
+.custom-col {
+    flex: 0 0 30%; /* Make each column take up about 1/3 of the row */
+    margin: 10px; /* Add space between columns */
+    padding: 20px; /* Add padding within columns */
+    border: 1px solid #e0e0e0; /* Add a light border */
+    border-radius: 8px; /* Round the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Header and Title Styles */
+h1.display-4 {
+    font-size: 2.5rem; /* Increase font size */
+    color: #0056b3; /* Darker primary color */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+/* Text Styles */
+p {
+    font-size: 1rem; /* Set a base font size */
+    color: #333; /* Darker text color */
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #0056b3; /* Darker background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding for button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Round corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+    .btn-primary:hover {
+        background-color: #004494; /* Darker shade on hover */
+    }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .custom-col {
+        flex: 0 0 100%; /* Stack columns on smaller screens */
+    }
+}
